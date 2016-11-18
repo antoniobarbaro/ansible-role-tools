@@ -1,0 +1,12 @@
+---
+# tasks file for tools
+- name: Install tools
+  yum: state=latest name={{ item }}
+  with_items:
+    - nano
+    - vim
+    - git
+    - unzip
+    - wget
+    - tree
+
