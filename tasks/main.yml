@@ -1,5 +1,5 @@
 ---
-# tasks file for tools
+# tasks file for nextcloud
 - name: Install tools
   yum: state=latest name={{ item }}
   with_items:

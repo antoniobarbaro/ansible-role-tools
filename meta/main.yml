@@ -1,6 +1,6 @@
 galaxy_info:
   author: Antonio Barbaro
-  description: Install essential tools nano, git, vim, ...
+  description: Install essential tools
   license: BSD
 
   min_ansible_version: 1.9
@@ -13,8 +13,5 @@ galaxy_info:
 
   galaxy_tags: 
     - tools
-    - vim
-    - nano
-    - git
 
 dependencies: []
