@@ -1,7 +1,9 @@
 ---
 # tasks file for nextcloud
 - name: Install tools
-  yum: state=latest name={{ item }}
+  yum: 
+    state: present 
+    name: "{{ item }}"
   with_items:
     - nano
     - vim
@@ -9,4 +11,5 @@
     - unzip
     - wget
     - tree
+    - htop
 
