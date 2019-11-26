@@ -1,15 +1,18 @@
 ---
-# tasks file for nextcloud
+
+- name: Install epel repo
+  yum: 
+    state: present 
+    name: "epel-release"
+
 - name: Install tools
   yum: 
     state: present 
-    name: "{{ item }}"
-  with_items:
-    - nano
-    - vim
-    - git
-    - unzip
-    - wget
-    - tree
-    - htop
-
+    name: 
+     - nano
+     - vim
+     - git
+     - unzip
+     - wget
+     - tree
+     - htop
